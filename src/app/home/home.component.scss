@@ -1,0 +1,45 @@
+.create-page {
+
+  padding: 20px 60px;
+
+  .page-content {
+    background-color: #FFF;
+
+    .img-avatar {
+      border-radius: 50%;
+      width: 150px;
+      display: block;
+      margin: 20px auto;
+    }
+
+    .change-img-button {
+      display: block;
+      margin: 0px auto;
+    }
+
+    .create-form {
+      padding: 20px;
+
+
+      .submit-button-container {
+        justify-content: flex-end;
+
+        .submit-button{
+          width: 100%;
+        }
+      }
+
+      .input-style{
+        width: 100%;
+      }
+
+      .mat-error {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+
+.tags-input{display:inline-block;padding:0 2px;background:#FFF;border:1px solid #CCC;width:16em;border-radius:2px;box-shadow:inset 0 1px 2px rgba(0,0,0,.1)}.tags-input .tag{display:inline-block;background:#EEE;color:#444;padding:0 4px;margin:2px;border:1px solid #CCC;border-radius:2px;font:inherit;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:pointer;transition:all .1s ease}.tags-input .tag.selected{background-color:#777;border-color:#777;color:#EEE}.tags-input .tag.dupe{-webkit-transform:scale3d(1.2,1.2,1.2);transform:scale3d(1.2,1.2,1.2);background-color:#FCC;border-color:#700}.tags-input input{-webkit-appearance:none!important;-moz-appearance:none!important;appearance:none!important;display:inline-block!important;padding:3px;margin:0!important;background:0 0!important;border:none!important;box-shadow:none!important;font:inherit!important;font-size:100%!important;outline:0!important}.tags-input .selected~input{opacity:.3}
+/*# sourceMappingURL=tags-input.css.map */

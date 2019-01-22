@@ -1,0 +1,39 @@
+.cat-item {
+    text-align: center;
+    background: azure;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-family: open sans;
+    margin: 10px;
+    border-radius: 500px;
+    padding: 50px !important;
+    position: relative;
+}
+
+.list-group.users-list {
+    max-width: 100vw;
+    min-height: 100vh;
+    flex-direction: inherit;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+a:hover div.cat-item {
+    background-color: red;
+    transition-duration: 1s;
+}
+
+
+body {
+	margin: 0;
+	background: white;
+	height: 100vh;
+ }

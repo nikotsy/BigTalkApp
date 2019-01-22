@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html ng-app="bigTalkApp">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>AngularJS Plunker</title>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <script data-require="angular.js@1.2.x" src="https://code.angularjs.org/1.2.16/angular.js" data-semver="1.2.16"></script>
+    <script src="app.js"></script>
+  </head>
+
+  <body>
+<div class="create-page">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">Create User</li>
+          </ol>
+        </nav>
+        <div class="page-content">
+          <div class="row">
+            <div class="col col-md-8">
+                    <form class="create-form" [formGroup]="exampleForm" novalidate (ngSubmit)="onSubmit(exampleForm.value)">
+                    <aw-wizard disableNavigationBar="true">
+                            <aw-wizard-step stepTitle="">
+                                    <div class="form-group">
+                                            <mat-form-field class="input-style">
+                                              <input matInput placeholder="Category" class="form-control" formControlName="category" value="{{this.cat}}">
+                                            </mat-form-field>
+                                          </div>
+
+                                    <div class="form-group">
+                                            <mat-form-field class="input-style">
+                                              <input matInput placeholder="Name" class="form-control" formControlName="name">
+                                            </mat-form-field>
+                                          </div>
+                                
+
+                              <button type="button" awPreviousStep>Go to previous step</button>
+                              <button type="button" awNextStep>Go to next step</button>
+                            </aw-wizard-step>
+                            <aw-wizard-step stepTitle="">
+                                    <div class="form-group">
+
+                                            <mat-form-field class="input-style">
+                                                    <input matInput type="tags" placeholder="Questions" class="form-control" formControlName="questions">
+                                                  </mat-form-field>
+      
+
+                                                  </div>
+                                                                       
+                                    <button type="button" awPreviousStep>Go to previous step</button>
+                                    <button type="button" awNextStep>Go to next step</button>
+                                  </aw-wizard-step>
+                            <aw-wizard-step stepTitle="">
+                              
+                                    <div class="form-group">
+                                            <mat-form-field class="input-style">
+                                              <input matInput placeholder="Facts" class="form-control" formControlName="facts">
+                                            </mat-form-field>
+                                          </div>
+                                
+
+                              <button type="button" awPreviousStep>Previous Step</button>
+                              <button mat-raised-button class="submit-button" color="primary" type="submit" [disabled]="!exampleForm.valid">Create</button>
+                            </aw-wizard-step>
+
+                            
+                          </aw-wizard>
+
+                              </form>
+
+                                                    
+                        
+                          
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+
+    </html>
+    

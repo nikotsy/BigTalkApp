@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html ng-app="bigTalkApp">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>AngularJS Plunker</title>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <script data-require="angular.js@1.2.x" src="https://code.angularjs.org/1.2.16/angular.js" data-semver="1.2.16"></script>
+    <script src="app.js"></script>
+  </head>
+
+  <body>
+<div class="create-page">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">Music</li>
+          </ol>
+        </nav>
+        <div class="page-content">
+          <div class="row">
+            <div class="col col-md-8">
+                    <form class="create-form" [formGroup]="exampleForm" novalidate (ngSubmit)="onSubmit(exampleForm.value)">
+                    <aw-wizard disableNavigationBar="true">
+                            <aw-wizard-step stepTitle="">
+                                    <div class="form-group remove">
+                                            <mat-form-field class="input-style">
+                                              <input matInput placeholder="Category" class="form-control" formControlName="category" value="{{this.cat}}">
+                                            </mat-form-field>
+                                          </div>
+
+                                    <div class="form-group">
+                                            <mat-form-field class="input-style">
+                                              <input matInput placeholder="What would you like to talk about?" class="form-control" formControlName="name">
+                                            </mat-form-field>
+                                            <p class="desc">(for example: Taylor Swift, classical music, Drake)</p>
+                                          </div>
+                                
+
+                                          <button class="prev-btn" type="button" onclick="window.location.href='/'" awPreviousStep><i class="fa fa-angle-left"></i></button>
+                                          <button class="next-btn" type="button" awNextStep><i class="fa fa-angle-right"></i></button>
+                            </aw-wizard-step>
+                            <aw-wizard-step stepTitle="">
+                                    <div class="form-group">
+
+                                            <mat-form-field class="input-style">
+                                                    <input matInput rows="4" placeholder="What would you like to ask?" class="form-control" formControlName="questions">
+                                                  </mat-form-field>
+                                                  <p class="desc">Keep it short and simple! (for example: Do you know Chopin? Who is your favorite artist? What is your favorite song?)</p>
+      
+
+                                                  </div>
+                                                                       
+                                                  <button class="prev-btn" type="button" awPreviousStep><i class="fa fa-angle-left"></i></button>
+                                                  <button class="next-btn" type="button" awNextStep><i class="fa fa-angle-right"></i></button>
+                                  </aw-wizard-step>
+                            <aw-wizard-step stepTitle="">
+                              
+                                    <div class="form-group">
+                                            <mat-form-field class="input-style">
+                                              <input matInput placeholder="Would you like to add a fun fact?" class="form-control" formControlName="facts">
+                                            </mat-form-field>
+                                            <p class="desc">(for example: Frederic Chopin was a classical composer. He was born in Poland and played the piano)
+                                              </p>
+                                          </div>
+                                
+
+                              <button class="prev-btn" type="button" awPreviousStep><i class="fa fa-angle-left"></i></button>
+                              <button mat-raised-button class="submit-button next-btn" color="primary" type="submit" [disabled]="!exampleForm.valid"><i class="fa fa-check"></i></button>
+                            </aw-wizard-step>
+
+                            
+                          </aw-wizard>
+
+                              </form>
+
+                                                    
+                        
+                          
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+
+    </html>
+    

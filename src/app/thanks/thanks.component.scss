@@ -1,0 +1,40 @@
+
+body {
+	margin: 0;
+	height: 100vh !important;
+	width: 100vw !important;
+	position: static;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  
+  }
+
+	.content-container {
+    background: black !important;
+}
+
+p.notebig {
+    color: #00F0C5;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.note {
+    color: black;
+    text-align: center;
+    background-color: white;
+    padding: 10px 30px;
+    margin: 50px 20px;
+    border-radius: 100px;
+}
+
+app-thanks, .container {
+    background: black !important;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh !important;
+}

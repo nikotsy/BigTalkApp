@@ -1,0 +1,135 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "~bootstrap/dist/css/bootstrap.css";
+
+body {
+   margin: 0;
+   height: 100vh;
+}
+
+
+ul.steps-indicator.steps-3 {
+   display: none !important;
+ }
+ 
+ .remove {
+   display: none;
+ }
+
+ .create-page {
+   max-height: 90vh;
+   max-width: 90vw;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+ol.breadcrumb {
+   background: none;
+   font-size: 3em;
+   width: 80vw;
+   text-align: center;
+   justify-content: center;
+   font-weight: 900;
+}
+
+form.create-form.ng-untouched.ng-pristine.ng-invalid {
+   width: 90vw;
+   height: auto;
+   text-align: center;
+}
+
+input::placeholder {
+   text-align: center !important;
+}
+
+.mat-form-field-infix {
+   text-align: center;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-underline {
+   background-color: rgba(0, 0, 0, 0.1);
+}
+
+button {
+   border-radius: 200px !important;
+   background: #9013FE;
+   border: none !important;
+   box-shadow: -5px 6px 20px #00000030 !important;
+   position: absolute !important;
+}
+
+button.prev-btn {
+   left: 40px;
+   bottom: 20px;
+   opacity: 0.8;
+   width: 70px;
+   height: 70px;
+}
+
+button.next-btn, button.submit-btn {
+   right: 40px !important;
+   bottom: 20px !important;
+   opacity: 1 !important;
+   min-width: 80px !important;
+   min-height: 80px !important;
+}
+
+button.submit-button {
+   background: #7ED321 !important;
+}
+
+.page-content {
+   height: 60vh;
+   display: flex;
+}
+
+.form-control:focus {
+   color: #495057;
+   background-color: #fff;
+   border-color: transparent;
+   outline: 0;
+   box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.0);
+}
+
+p.desc{
+   font-size: 80%;
+   opacity: 0.4;
+   font-weight: 500;
+}
+
+input {
+   font-size: 1em !important;
+}
+
+input {
+   text-align: center;
+   width: 100% !important;
+   word-break: break-all;
+   height: 20vh;
+}
+
+form.create-form.ng-invalid.ng-dirty.ng-touched {
+   width: 90vw;
+}
+
+i.fa {
+   color: white;
+}
+
+i.fa-angle-right {
+   font-size: 2.2em;
+   margin-left: 5px;
+}
+
+i.fa-angle-left {
+   font-size: 2em;
+   margin-left: -5px;
+}
+
+i.fa-check {
+   font-size: 2.2em;
+   margin-left: 5px;
+}

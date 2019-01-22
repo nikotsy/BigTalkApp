@@ -1,0 +1,10 @@
+<div class="list-group users-list">
+    <div *ngFor="let item of items">
+          <a [routerLink]="['/new-user']" [queryParams]="{ cat: item.payload.doc.data().name }">
+          <div class="cat-item" style="overflow: hidden; background-color: rgba(0, 0, 0, 1);">
+                <img src="{{item.payload.doc.data().image}}" class="photo" style="width: inherit; height: inherit; position: absolute; opacity: 0.7">
+          <span style="z-index: 99999; color: white;  border-radius: 100px; padding: 10px;">{{item.payload.doc.data().name}}</span>
+          </div>
+        </a>
+    </div>
+  </div>
