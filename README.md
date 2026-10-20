@@ -23,7 +23,7 @@ sample function.
 
 ## Run and build
 
-`npm install`, then `npm start` (`ng serve`) or `npm run build` (`ng build`, into `dist/angular6-firebase-crud/`, the folder `firebase.json` hosts). The dependencies are Angular 6 and 7 mixed, with AngularFire 5 and Angular Material 6; they need a Node from that era and have not been built since 2019.
+`npm install`, then `npm start` (`ng serve`) or `npm run build` (`ng build`, into `dist/angular6-firebase-crud/`, the folder `firebase.json` hosts). The dependencies are Angular 6 and 7 mixed, with AngularFire 5 and Angular Material 6; expect a Node from that era (2019).
 
 ## Deploy
 
