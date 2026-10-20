@@ -20,6 +20,7 @@ sample function.
 | `dist/` | A committed build output |
 | `firebase.json`, `.firebaserc`, `*.rules` | Firebase configuration for `bigtalkdemo` |
 | `6.0.0-beta`, `=2.3.1`, `=6.0.0-beta.0` | Empty files, left over from mistyped `npm install` commands |
+| `mycelium.json` | The repo's Mycelium manifest (kind `poc`) |
 
 ## Run and build
 
