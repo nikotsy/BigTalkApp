@@ -4,7 +4,7 @@
 
 ## What it is
 
-Two commits on one day, 2019-01-22. The pages are: category pick (the start
+Written on 2019-01-22. The pages are: category pick (the start
 page), new user (a step-by-step form), thanks, a list of all users, and a user
 detail page for editing or deleting. The Firebase project is `bigtalkdemo`; its
 Hosting address returns 404. The Cloud Functions folder holds only the commented-out
@@ -21,6 +21,14 @@ sample function.
 | `firebase.json`, `.firebaserc`, `*.rules` | Firebase configuration for `bigtalkdemo` |
 | `6.0.0-beta`, `=2.3.1`, `=6.0.0-beta.0` | Empty files, left over from mistyped `npm install` commands |
 
+## Run and build
+
+`npm install`, then `npm start` (`ng serve`) or `npm run build` (`ng build`, into `dist/angular6-firebase-crud/`, the folder `firebase.json` hosts). The dependencies are Angular 6 and 7 mixed, with AngularFire 5 and Angular Material 6; they need a Node from that era and have not been built since 2019.
+
+## Deploy
+
+No CI or deploy workflow. `firebase.json` points Hosting at `dist/angular6-firebase-crud/` in project `bigtalkdemo`; that project's Hosting address answers 404.
+
 ## Status
 
-Dormant. 2 commits, both on 2019-01-22. No CI or deploy workflow.
+Dormant since 2019-01-22. Version `0.0.0` (`package.json`); no tags or GitHub releases.
