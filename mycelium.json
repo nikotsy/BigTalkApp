@@ -1,0 +1,34 @@
+{
+  "schema": "mycelium/v1",
+  "spec_version": "1.1.0",
+  "type": "manifest",
+  "kind": "poc",
+  "repository": {
+    "owner": "nikotsy",
+    "name": "BigTalkApp",
+    "remote": "https://github.com/nikotsy/BigTalkApp.git",
+    "default_branch": "master",
+    "default_branch_source": "origin/HEAD"
+  },
+  "owns": {
+    "resolved": false,
+    "via": "hq",
+    "reason": "HQ has no repoLink for this repository"
+  },
+  "knowledge": {
+    "read_from": "working tree",
+    "inventory": null,
+    "agents": null,
+    "docs": null
+  },
+  "releases": {
+    "tags": 0,
+    "latest_tag": null,
+    "release_branches": 0,
+    "counted_from": "the local checkout — a clone without tags reports zero here"
+  },
+  "generated": {
+    "by": "dev-policy bin/manifest.mjs",
+    "at_sha": "f2ad0f65f63899865b8fd6526370024cc4b262d6"
+  }
+}
